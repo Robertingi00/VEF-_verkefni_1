@@ -1,4 +1,4 @@
-from bottle import route, 
+from bottle import * 
 import os
 
 @route('/')
