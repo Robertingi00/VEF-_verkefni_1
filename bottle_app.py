@@ -1,4 +1,5 @@
-from bottle import route, run
+from bottle import route, 
+import os
 
 @route('/')
 def index():
@@ -22,4 +23,4 @@ def bottle():
     return "You are in pictueres"
 
 
-run()
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000))
