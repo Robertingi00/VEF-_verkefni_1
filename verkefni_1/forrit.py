@@ -1,4 +1,4 @@
-from bottle import *
+from bottle import * 
 import os
 
 @route('/')
@@ -11,17 +11,16 @@ def index():
 
 
 @route('/about')
-def about():
+def bottle():
     return "You are in about"
 
 @route('/biography')
-def biography():
+def bottle():
     return "You are in biography"
 
 @route('/pictures')
-def pictures():
+def bottle():
     return "You are in pictueres"
-
 
 
 run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
